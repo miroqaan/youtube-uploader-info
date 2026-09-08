@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="tts 개인용 YouTube 업로더의 Google 권한, 데이터 전송, 로컬 보관 및 권한 철회 방법을 설명합니다.">
+  <title>개인정보처리방침 · tts YouTube Auto Uploader</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">본문으로 건너뛰기</a>
+  <header><div class="wrap bar"><a class="brand" href="./">tts <span>YouTube Auto Uploader</span></a><nav aria-label="주요 메뉴"><a href="./">소개</a><a href="privacy.html" aria-current="page">개인정보처리방침</a></nav></div></header>
+  <main id="main" class="wrap document">
+    <p class="eyebrow">Privacy policy</p><h1>개인정보처리방침</h1><p class="lead">개인용 업로드 도구와 이 안내 사이트가 다루는 정보를 설명합니다.</p><p class="muted">시행일 및 최종 업데이트: 2026년 9월 9일</p>
+    <section><h2>1. 대상과 운영자</h2><p>본 방침은 아카기가 개인적으로 사용하는 YouTube Auto Uploader와 이 안내 사이트에 적용됩니다. Google OAuth 동의 화면의 앱 이름은 <strong>tts</strong>입니다. 일반 사용자의 계정을 모집하거나 운영자 서버를 통해 영상을 대신 업로드하는 서비스가 아닙니다.</p><p>운영자 및 개인정보 문의: 아카기 · <a href="mailto:cryforthefutur@gmail.com">cryforthefutur@gmail.com</a></p></section>
+    <section><h2>2. 접근하는 정보와 이용 목적</h2><p>이 프로그램은 <strong>YouTube API Services</strong>를 사용합니다. 사용자가 Google 동의 화면에서 허용한 범위 안에서 다음 정보를 처리합니다.</p><ul><li><strong>채널 정보:</strong> YouTube 읽기 전용 권한으로 연결된 채널의 ID와 기본 정보(snippet)를 조회합니다. 응답에서 채널 ID와 이름을 추출하여 업로드 대상 확인 및 실행 로그에 사용합니다.</li><li><strong>업로드 콘텐츠와 설정:</strong> 지정한 영상, 선택적 썸네일, 제목, 설명, 태그, 카테고리, 공개 범위, 아동용 여부, 합성 콘텐츠 여부, 선택적 예약 시각 및 구독자 알림 설정을 Google/YouTube에 전송합니다. 제목을 따로 지정하지 않으면 파일명에서 제목을 만들 수 있습니다.</li><li><strong>인증 정보:</strong> Google OAuth가 발급한 액세스 토큰과 갱신 토큰을 계정 연결 및 허용된 API 요청에 사용합니다. Google 계정 비밀번호는 프로그램에서 입력받거나 저장하지 않습니다.</li><li><strong>실행 기록:</strong> 경로와 파일명, 영상 제목, 채널 ID·이름, 공개 설정, 예약 시각, 진행 상태, 영상 ID·URL 및 오류·경고 정보를 로컬에 기록할 수 있습니다.</li></ul></section>
+    <section><h2>3. 전송 및 제3자 처리</h2><p>인증 요청은 Google에, 업로드 콘텐츠 및 설정은 Google/YouTube API에 전송됩니다. 프로그램에는 별도의 운영자 서버로 이 정보를 수집하거나 광고·분석 목적으로 전송하는 기능이 없습니다. 운영자는 이 도구를 통해 처리하는 Google 사용자 데이터를 판매하거나 광고 타기팅에 사용하지 않습니다.</p><p>Google과 YouTube의 처리에는 <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>과 <a href="https://www.youtube.com/t/terms">YouTube 서비스 약관</a>이 적용됩니다. 이 도구의 Google API 정보 이용 및 다른 앱으로의 전송은 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>의 Limited Use 요구사항을 따릅니다.</p></section>
+    <section><h2>4. 저장 위치와 보관</h2><p>인증 토큰은 사용자가 설정한 로컬 토큰 폴더에 저장됩니다. 업로드 결과와 실행 로그도 로컬에 저장되며, 처리한 영상·메타데이터·썸네일·상태 기록은 설정된 성공 또는 실패 보관 폴더로 이동할 수 있습니다.</p><p><strong>현재 프로그램에는 기간에 따른 자동 삭제 기능이 없습니다.</strong> 사용자가 직접 보관과 삭제를 관리해야 합니다. 토큰과 로그에 대한 별도의 애플리케이션 수준 암호화를 보장하지 않으므로, 해당 폴더를 공개 저장소에 올리거나 타인과 공유하지 말고 컴퓨터의 접근 권한을 보호하세요. 사용자가 클라우드 동기화 폴더를 저장 위치로 선택하면 해당 서비스의 설정에 따라 파일이 동기화될 수 있습니다.</p></section>
+    <section><h2>5. 접근 권한 철회와 삭제 방법</h2><ol><li>실행 중인 업로더를 종료합니다.</li><li><a href="https://myaccount.google.com/connections">Google 계정의 서드 파티 앱 연결 관리</a>에서 <strong>tts</strong>의 접근 권한을 삭제합니다. 같은 인증 구성을 사용하는 다른 도구에도 영향을 줄 수 있습니다.</li><li>설정된 로컬 토큰 폴더의 인증 파일을 삭제합니다. 불필요한 로그, 업로드 상태 기록과 보관 파일도 직접 삭제합니다. 백업이나 동기화 사본이 있다면 해당 위치도 확인합니다.</li></ol><p>권한 철회만으로 로컬 파일이 자동 삭제되지는 않습니다. 반대로 로컬 인증 파일만 삭제해도 Google 계정의 기존 권한이 자동 철회되지는 않습니다.</p><p>이미 업로드한 영상은 이 절차로 삭제되지 않습니다. 영상 삭제나 공개 범위 변경은 <a href="https://studio.youtube.com/">YouTube Studio</a>에서 진행하세요. 처리 방식에 관한 문의는 위 이메일로 연락할 수 있습니다. 문의 메일은 답변 목적으로 처리되므로 비밀번호나 인증 토큰을 보내지 마세요.</p></section>
+    <section><h2>6. 안내 사이트의 방문 정보</h2><p>이 사이트는 GitHub Pages에서 제공하는 정적 안내 페이지입니다. 자체 로그인, 입력 폼, 분석 스크립트, 광고, 추적 쿠키 또는 브라우저 저장소를 사용하지 않습니다.</p><p>호스팅 제공자인 GitHub는 보안 목적 등으로 방문자의 IP 주소를 기록할 수 있습니다. 해당 처리는 <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub 개인정보처리방침</a>을 참고하세요. 외부 링크로 이동하면 해당 사이트의 정책이 적용됩니다.</p></section>
+    <section><h2>7. 변경 안내</h2><p>도구의 데이터 처리 방식이 바뀌면 이 페이지와 시행일을 갱신합니다. 새로운 목적이나 권한이 필요한 변경은 사용 전에 내용을 확인하고 필요한 동의를 받은 뒤 적용합니다.</p></section>
+    <a class="button" href="./">소개 페이지로 돌아가기</a>
+  </main>
+  <footer class="wrap"><span>tts · YouTube Auto Uploader</span><a href="./">소개</a><span>최종 업데이트 2026. 09. 09.</span></footer>
+</body>
+</html>
