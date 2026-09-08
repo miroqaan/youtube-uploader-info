@@ -7,7 +7,7 @@ assert.deepEqual(files, ['.nojekyll','index.html','privacy.html','style.css'].so
 let checks = 1;
 for (const name of ['index.html', 'privacy.html']) {
   const html = fs.readFileSync(path.join(root, name), 'utf8');
-  for (const pattern of [/<!doctype html>/i, /<html lang="ko">/, /name="viewport"/, /name="description"/, /<title>.+<\/title>/, /id="main"/, /mailto:akagiuniverse@gmail.com/, /tts/, /YouTube/]) { assert.match(html, pattern, name); checks++; }
+  for (const pattern of [/<!doctype html>/i, /<html lang="ko">/, /name="viewport"/, /name="description"/, /<title>.+<\/title>/, /id="main"/, /mailto:akagiuniverse@gmail.com/, /Akagi Uploader/, /YouTube/]) { assert.match(html, pattern, name); checks++; }
   assert.equal((html.match(/<h1[ >]/g) || []).length, 1); checks++;
   assert.doesNotMatch(html, /<script|<iframe|<form|localStorage|sessionStorage|document\.cookie|GOCSPX-|AIza[\w-]{20}|-----BEGIN .*PRIVATE KEY-----|gh[pousr]_[A-Za-z0-9]{20}/i); checks++;
   const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map(m => m[1]);
