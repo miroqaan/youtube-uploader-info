@@ -3,7 +3,7 @@ const path = require('node:path');
 const assert = require('node:assert/strict');
 const root = path.join(__dirname, 'docs');
 const files = fs.readdirSync(root).sort();
-assert.deepEqual(files, ['.nojekyll','index.html','privacy.html','style.css'].sort());
+assert.deepEqual(files, ['.nojekyll','index.html','popo','privacy.html','style.css'].sort());
 let checks = 1;
 for (const name of ['index.html', 'privacy.html']) {
   const html = fs.readFileSync(path.join(root, name), 'utf8');
